@@ -15,32 +15,34 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="//db.onlinewebfonts.com/c/379d2dced46dad50a81628e84d8fbb81?family=Inconsolata" rel="stylesheet" type="text/css"/>
   </head>
-  <body>
-    <header>
+  <body class="mg-0-auto">
+    <header class="mg-0-auto mg-30-top w-70">
       <div class="header">
         <a href="" class="header--logo">MINIM&#216</a>
         <ul class="header--links pd-0">
-          <li class="header--link"><a href="">LIFESTYLE</a></li>
-          <li class="header--link"><a href="">PHOTODIARY</a></li>
-          <li class="header--link"><a href="">MUSIC</a></li>
-          <li class="header--link"><a id="pdr-0" href="">TRAVEL</a></li>
+          <li ><a class="header--link header--link__without-pl" href="">LIFESTYLE</a></li>
+          <li ><a class="header--link" href="">PHOTODIARY</a></li>
+          <li ><a class="header--link" href="">MUSIC</a></li>
+          <li ><a class="header--link header--link__without-pr" href="">TRAVEL</a></li>
         </ul>
       </div>
     </header>
 
     <main>
-      <section>
+      <div class="slider mg-0-auto mg-70-bot w-70">
+        <img
+          src="./images/main.png"
+          alt="Two girls in front of the mountain"
+        />
+      </div>
+
+      <section class="w-60 mg-0-auto">
         <!-- first post -->
-        <div class="slider">
-          <img
-            src="./images/main.png"
-            alt="Two girls in front of the mountain"
-          />
-        </div>
-        <div>
-          <p>PHOTODIARY</p>
+        
+        <div class="main-wrapper mg-70-bot">
+          <a href="" class="post--category">PHOTODIARY</a>
           <h2>The perfect weekend getaway</h2>
-          <p>
+          <p class="mg-30-bot">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -58,18 +60,20 @@
             quia non numquam eius modi tempora incidunt ut labore et dolore
             magnam aliquam quaerat voluptatem.
           </p>
-          <p>Leave a comment</p>
+          <a href="" class="post--category">LEAVE A COMMENT</a>
         </div>
       </section>
 
-      <section>
+      <section class="w-60 mg-0-auto">
         <!-- other 4 posts -->
         <div class="four-posts">
-          <div class="four-posts--post">
-            <img src="./images/image.png" alt="A girl on a man's neck" />
-            <p>LIFESTYLE</p>
+          <div class="post">
+            <div class="post--img-wrapper">
+              <img class="post--img" src="./images/image.png" alt="A girl on a man's neck" />
+            </div>
+            <a href="" class="post--category">LIFESTYLE</a>
             <h2>More than just a music festival</h2>
-            <p>
+            <p class="post--text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -88,11 +92,13 @@
               et dolore magnam aliquam quaerat voluptatem.
             </p>
           </div>
-          <div class="four-posts--post">
-            <img src="./images/coffee.png" alt="coffee in cup" />
-            <p>LIFESTYLE</p>
+          <div class="post">
+            <div class="post--img-wrapper">
+              <img class="post--img" src="./images/coffee.png" alt="coffee in cup" />
+            </div>
+            <a href="" class="post--category">LIFESTYLE</a>
             <h2>Life tastes better with coffee</h2>
-            <p>
+            <p class="post--text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -111,11 +117,13 @@
               et dolore magnam aliquam quaerat voluptatem.
             </p>
           </div>
-          <div class="four-posts--post">
-            <img src="./images/bridge.png" alt="two girls and a bridge" />
-            <p>PHOTODIARY</p>
+          <div class="post">
+            <div class="post--img-wrapper">
+              <img class="post--img" src="./images/bridge.png" alt="two girls and a bridge" />
+            </div>
+            <a href="" class="post--category">PHOTODIARY</a>
             <h2>American dream</h2>
-            <p>
+            <p class="post--text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -134,11 +142,13 @@
               et dolore magnam aliquam quaerat voluptatem.
             </p>
           </div>
-          <div class="four-posts--post">
-            <img src="./images/back-of-body.png" alt="somebody wear in hat" />
-            <p>PHOTODIARY</p>
+          <div class="post">
+            <div class="post--img-wrapper">
+              <img class="post--img" src="./images/back-of-body.png" alt="somebody wear in hat" />
+            </div>
+            <a href="" class="post--category">PHOTODIARY</a>
             <h2>A day exploring the Alps</h2>
-            <p>
+            <p class="post--text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -160,25 +170,27 @@
         </div>
       </section>
 
-      <section>
+      <section class="mg-0-auto">
         <!-- sign up form-->
-        <div>
-          <form>
-            <h2>Sign up for our newsletter!</h2>
-            <input placeholder="Enter a valid email address" />
-            <button>send</button>
+        <div class="sign-up-form-wrapper">
+          <form class="sign-up-form">
+            <h2 class="mg-0 sign-up-form--caption">Sign up for our newsletter!</h2>
+            <input class="sign-up-form--input" placeholder="Enter a valid email address" />
+            <a href="" class="sign-up-form--btn sign-up-form--btn__without-hover"><img src="./images/send icon.svg"></a>
           </form>
         </div>
       </section>
 
-      <section>
+      <section class="w-60 mg-0-auto">
         <!-- last 2 posts -->
         <div class="last-posts">
-          <div class="last-posts--post">
-            <img src="./images/girl-with-hat.png" alt="girl on the road" />
-            <p>LIFESTYLE</p>
+          <div class="post">
+            <div class="post--img-wrapper">
+              <img class="post--img" src="./images/girl-with-hat.png" alt="girl on the road" />
+            </div>
+            <a href="" class="post--category">LIFESTYLE</a>
             <h2>Top 10 song for running</h2>
-            <p>
+            <p class="post--text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -197,11 +209,13 @@
               et dolore magnam aliquam quaerat voluptatem.
             </p>
           </div>
-          <div class="last-posts--post">
-            <img src="./images/road-snow.png" alt="road and snow" />
-            <p>LIFESTYLE</p>
+          <div class="post">
+            <div class="post--img-wrapper">
+              <img class="post--img" src="./images/road-snow.png" alt="road and snow" />
+            </div>
+            <a href="" class="post--category">LIFESTYLE</a>
             <h2>Cold winter days</h2>
-            <p>
+            <p class="post--text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -222,19 +236,20 @@
           </div>
         </div>
       </section>
+      <button class="load-more">Load more</button>
     </main>
 
     <footer>
       <div class="footer">
         <div class="footer--terms">
-          <span>Terms and conditions</span>
-          <span>Privacy</span>
+          <a href="" class="mg-20-right">Terms and conditions</a>
+          <a href="">Privacy</a>
         </div>
         <div class="footer--follow">
           <span>Follow</span>
-          <img src="./images/facebook.svg" alt="facebook icon" />
-          <img src="./images/twitter.svg" alt="twitter icon" />
-          <img src="./images/instagram.svg" alt="instagram icon" />
+          <a href=""><img class="footer--img mg-20-left" src="./images/facebook.svg" alt="facebook icon" /></a>
+          <a href=""><img class="footer--img mg-20-left" src="./images/twitter.svg" alt="twitter icon" /></a>
+          <a href=""><img class="footer--img mg-20-left" src="./images/instagram.svg" alt="instagram icon" /></a>
         </div>
       </div>
     </footer>

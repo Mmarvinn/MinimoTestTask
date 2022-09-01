@@ -1,4 +1,21 @@
+/* import fonts */
+
 @import url(//db.onlinewebfonts.com/c/379d2dced46dad50a81628e84d8fbb81?family=Inconsolata);
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('//db.onlinewebfonts.com/t/379d2dced46dad50a81628e84d8fbb81.eot');
+  src: url('//db.onlinewebfonts.com/t/379d2dced46dad50a81628e84d8fbb81.eot?#iefix')
+      format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/379d2dced46dad50a81628e84d8fbb81.woff2')
+      format('woff2'),
+    url('//db.onlinewebfonts.com/t/379d2dced46dad50a81628e84d8fbb81.woff')
+      format('woff'),
+    url('//db.onlinewebfonts.com/t/379d2dced46dad50a81628e84d8fbb81.ttf')
+      format('truetype'),
+    url('//db.onlinewebfonts.com/t/379d2dced46dad50a81628e84d8fbb81.svg#Inconsolata')
+      format('svg');
+}
 
 @font-face {
   font-family: 'Playfair-Black';
@@ -31,69 +48,239 @@
 }
 
 @font-face {
-  font-family: 'Inconsolata';
-  src: url('//db.onlinewebfonts.com/t/379d2dced46dad50a81628e84d8fbb81.eot');
-  src: url('//db.onlinewebfonts.com/t/379d2dced46dad50a81628e84d8fbb81.eot?#iefix')
-      format('embedded-opentype'),
-    url('//db.onlinewebfonts.com/t/379d2dced46dad50a81628e84d8fbb81.woff2')
-      format('woff2'),
-    url('//db.onlinewebfonts.com/t/379d2dced46dad50a81628e84d8fbb81.woff')
-      format('woff'),
-    url('//db.onlinewebfonts.com/t/379d2dced46dad50a81628e84d8fbb81.ttf')
-      format('truetype'),
-    url('//db.onlinewebfonts.com/t/379d2dced46dad50a81628e84d8fbb81.svg#Inconsolata')
-      format('svg');
+  font-family: 'Ubuntu-Light';
+  src: url('./fonts/Ubuntu-L.ttf') format('truetype');
+}
+
+/* General settings */
+
+:root {
+  --primary-color-100: #000000;
+  --primary-color-70: #333333;
+  --primary-color-40: #626262;
+  --primary-color-20: #b4ad9e;
+  --primary-color-10: rgba(240, 240, 240, 1);
+  --secondary-color-50: #7fffd4;
 }
 
 * {
   font-family: 'Playfair-Regular';
-}
-
-#pdr-0 {
-  padding-right: 0;
-}
-
-.pd-0 {
-  padding: 0;
+  box-sizing: border-box;
+  color: var(--primary-color-40);
 }
 
 body {
-  width: 1200px;
-  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 14px;
 }
 
 img {
   width: 100%;
 }
 
+h2 {
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  h2 {
+    letter-spacing: 1.5px;
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  h2 {
+    letter-spacing: 1px;
+    font-size: 18px;
+  }
+}
+
 a {
   text-decoration: none;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* add fast classes */
+
+.pd-0 {
+  padding: 0;
+}
+
+.mg-0 {
+  margin: 0;
+}
+
+.mg-0-auto {
+  margin: 0 auto;
+}
+
+.mg-20-right {
+  margin-right: 20px;
+}
+
+.mg-20-left {
+  margin-left: 20px;
+}
+
+.mg-30-top {
+  margin-top: 30px;
+}
+
+.mg-30-bot {
+  margin-bottom: 30px;
+}
+
+.mg-70-bot {
+  margin-bottom: 70px;
+}
+
+.w-60 {
+  width: 60vw;
+}
+
+.w-70 {
+  width: 70vw;
+}
+
+.sign-up-form--btn__without-hover:hover {
+  color: var(--primary-color-40);
+}
+
+@media screen and (min-width: 651px) {
+  .header {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .header--links {
   list-style: none;
   display: flex;
+  justify-content: space-between;
 }
 
 .header--link {
-  margin-left: 70px;
+  font-size: 14px;
+  color: var(--primary-color-100);
+  padding: 10px;
 }
 
-.header--link a {
-  font-size: 14px;
-  color: black;
-  padding: 10px;
+@media screen and (max-width: 650px) {
+  .header--link__without-pl {
+    padding-left: 0;
+  }
+}
+
+.header--link__without-pr {
+  padding-right: 0;
 }
 
 .header--logo {
   font-size: 30px;
   font-family: 'Inconsolata';
-  color: black;
+  color: var(--primary-color-100);
   letter-spacing: 5px;
+}
+
+.four-posts,
+.last-posts {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  grid-row-gap: 100px;
+}
+
+.sign-up-form-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 70px 0px;
+  padding: 50px 0px;
+  background: var(--primary-color-10);
+}
+
+.sign-up-form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.sign-up-form--input {
+  width: 270px;
+  margin: 20px 0px 20px 20px;
+  border: none;
+  border-bottom: 1px solid;
+  background: var(--primary-color-10);
+  outline: none;
+}
+
+.sign-up-form--input:active {
+  border: none;
+  border-bottom: 1px solid;
+}
+
+.sign-up-form--caption {
+  width: 100%;
+  color: var(--primary-color-70);
+}
+
+.sign-up-form--btn {
+  margin: 20px 20px 20px 0px;
+  border-bottom: 1px solid;
+}
+
+footer {
+  padding: 30px 0;
+  background-color: var(--primary-color-10);
+  margin-top: 30px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 60vw;
+}
+
+.footer--img {
+  width: auto;
+}
+
+.post {
+  width: auto;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .post {
+    width: auto;
+    max-height: 500px;
+    overflow: hidden;
+  }
+}
+
+.post--category {
+  color: var(--primary-color-20);
+  font-family: 'Ubuntu-Light';
+}
+
+.load-more {
+  font-size: 20px;
+  width: 160px;
+  height: 60px;
+  margin: 100px auto;
+  display: block;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--secondary-color-50);
 }
