@@ -1,0 +1,99 @@
+@import url(//db.onlinewebfonts.com/c/379d2dced46dad50a81628e84d8fbb81?family=Inconsolata);
+
+@font-face {
+  font-family: 'Playfair-Black';
+  src: url('./fonts/PlayfairDisplay-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair-Black-Italic';
+  src: url('./fonts/PlayfairDisplay-BlackItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair-Bold';
+  src: url('./fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair-Bolt-Italic';
+  src: url('./fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair-Italic';
+  src: url('./fonts/PlayfairDisplay-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair-Regular';
+  src: url('./fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('//db.onlinewebfonts.com/t/379d2dced46dad50a81628e84d8fbb81.eot');
+  src: url('//db.onlinewebfonts.com/t/379d2dced46dad50a81628e84d8fbb81.eot?#iefix')
+      format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/379d2dced46dad50a81628e84d8fbb81.woff2')
+      format('woff2'),
+    url('//db.onlinewebfonts.com/t/379d2dced46dad50a81628e84d8fbb81.woff')
+      format('woff'),
+    url('//db.onlinewebfonts.com/t/379d2dced46dad50a81628e84d8fbb81.ttf')
+      format('truetype'),
+    url('//db.onlinewebfonts.com/t/379d2dced46dad50a81628e84d8fbb81.svg#Inconsolata')
+      format('svg');
+}
+
+* {
+  font-family: 'Playfair-Regular';
+}
+
+#pdr-0 {
+  padding-right: 0;
+}
+
+.pd-0 {
+  padding: 0;
+}
+
+body {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header--links {
+  list-style: none;
+  display: flex;
+}
+
+.header--link {
+  margin-left: 70px;
+}
+
+.header--link a {
+  font-size: 14px;
+  color: black;
+  padding: 10px;
+}
+
+.header--logo {
+  font-size: 30px;
+  font-family: 'Inconsolata';
+  color: black;
+  letter-spacing: 5px;
+}
