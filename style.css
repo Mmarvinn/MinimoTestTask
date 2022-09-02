@@ -75,6 +75,7 @@ body {
 
 img {
   width: 100%;
+  border-radius: 4px;
 }
 
 h2 {
@@ -116,6 +117,10 @@ a:hover {
 
 .pd-0 {
   padding: 0;
+}
+
+.pd-50-bot {
+  padding-bottom: 50px;
 }
 
 .mg-0 {
@@ -356,7 +361,8 @@ button:hover {
 }
 
 .share--icon-f,
-.share--icon-t {
+.share--icon-t,
+.share--icon-i {
   opacity: 0.65;
 }
 
@@ -448,4 +454,51 @@ button:hover {
 .connect-social {
   display: flex;
   justify-content: flex-end;
+}
+
+.aside-wrapper {
+  max-width: 250px;
+}
+
+aside {
+  width: 100%;
+  position: sticky;
+  top: 30px;
+}
+
+.article-with-aside {
+  width: 70vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5vw;
+  justify-items: end;
+}
+
+.full-post {
+  grid-column: span 2;
+  width: 40vw;
+}
+
+.aside--post-name {
+  font-size: 26px;
+  margin: 10px 0;
+}
+
+.aside--post-text {
+  font-size: 12px;
+  max-height: 69px;
+  overflow: hidden;
+}
+
+.aside--next-post {
+  margin: 50px 0;
+}
+
+.comments-qty {
+  font-size: 10px;
+}
+
+.aside--banner {
+  filter: saturate(0.2);
 }
