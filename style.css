@@ -102,6 +102,14 @@ a {
 
 a:hover {
   text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+  p,
+  q {
+    font-size: 12px;
+  }
 }
 
 /* atom classes */
@@ -142,8 +150,24 @@ a:hover {
   width: 60vw;
 }
 
+@media screen and (max-width: 400px) {
+  .w-60 {
+    width: 70vw;
+  }
+}
+
 .w-70 {
   width: 70vw;
+}
+
+@media screen and (max-width: 400px) {
+  .w-70 {
+    width: 80vw;
+  }
+}
+
+.w-100 {
+  width: 100%;
 }
 
 .sign-up-form--btn__without-hover:hover {
@@ -316,4 +340,112 @@ button:hover {
     flex-wrap: wrap;
     justify-content: center;
   }
+}
+
+/* second page style */
+
+.post-detail--quote {
+  margin: 40px;
+  display: block;
+}
+
+@media screen and (max-width: 400px) {
+  .post-detail--quote {
+    margin: 10px;
+  }
+}
+
+.share--icon-f,
+.share--icon-t {
+  opacity: 0.65;
+}
+
+.share--icon-g,
+.share--icon-p {
+  opacity: 0.4;
+}
+
+.share--img {
+  width: 15px;
+  height: 15px;
+}
+
+.share--span {
+  color: var(--primary-color-20);
+}
+
+.share {
+  display: flex;
+  justify-content: flex-end;
+  margin: 50px 0;
+}
+
+.three-posts-wrapper {
+  display: grid;
+  width: 60vw;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.three-posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .three-posts {
+    grid-template-columns: 1fr;
+  }
+}
+
+.three-posts-wrapper--text {
+  margin: 0 0 50px 0;
+}
+
+.three-posts-section {
+  background-color: var(--primary-color-10);
+  margin: 50px 0;
+}
+
+.rounded {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+@media screen and (max-width: 400px) {
+  .rounded {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.comments {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 50px 0;
+}
+
+.comments--comment-text {
+  margin: 10px 0;
+}
+
+.comments-wrapper--new-comment {
+  justify-content: flex-start;
+}
+
+.comments--input {
+  height: 70px;
+  opacity: 0.6;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+.connect-social {
+  display: flex;
+  justify-content: flex-end;
 }
