@@ -59,8 +59,7 @@
   --primary-color-70: #333333;
   --primary-color-40: #626262;
   --primary-color-20: #b4ad9e;
-  --primary-color-10: rgba(240, 240, 240, 1);
-  --secondary-color-50: #7fffd4;
+  --primary-color-10: #f0f0f0;
 }
 
 * {
@@ -101,7 +100,11 @@ a {
   text-decoration: none;
 }
 
-/* add fast classes */
+a:hover {
+  text-decoration: underline;
+}
+
+/* atom classes */
 
 .pd-0 {
   padding: 0;
@@ -167,6 +170,14 @@ a {
   padding: 10px;
 }
 
+@media screen and (max-width: 450px) {
+  .header--link {
+    font-size: 10px;
+    color: var(--primary-color-100);
+    padding: 5px;
+  }
+}
+
 @media screen and (max-width: 650px) {
   .header--link__without-pl {
     padding-left: 0;
@@ -184,6 +195,10 @@ a {
   letter-spacing: 5px;
 }
 
+.header--logo:hover {
+  text-decoration: none;
+}
+
 .four-posts,
 .last-posts {
   display: grid;
@@ -191,6 +206,13 @@ a {
   grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
   grid-row-gap: 100px;
+}
+
+@media screen and (max-width: 850px) {
+  .four-posts,
+  .last-posts {
+    grid-template-columns: 1fr;
+  }
 }
 
 .sign-up-form-wrapper {
@@ -216,6 +238,12 @@ a {
   border-bottom: 1px solid;
   background: var(--primary-color-10);
   outline: none;
+}
+
+@media screen and (max-width: 400px) {
+  .sign-up-form--input {
+    width: 200px;
+  }
 }
 
 .sign-up-form--input:active {
@@ -256,14 +284,6 @@ footer {
   overflow: hidden;
 }
 
-@media screen and (max-width: 1200px) {
-  .post {
-    width: auto;
-    max-height: 500px;
-    overflow: hidden;
-  }
-}
-
 .post--category {
   color: var(--primary-color-20);
   font-family: 'Ubuntu-Light';
@@ -281,6 +301,19 @@ button:hover {
   cursor: pointer;
 }
 
-a:hover {
-  color: var(--secondary-color-50);
+.footer--follow {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+}
+
+@media screen and (max-width: 500px) {
+  .footer--follow {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
