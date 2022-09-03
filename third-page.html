@@ -22,7 +22,7 @@
           <a href="./index.html" class="header--logo">MINIM&#216</a>
         </div>
         <ul class="header--links pd-0">
-          <li ><a class="header--link header--link__without-pl" href="./secondPage.html">LIFESTYLE</a></li>
+          <li ><a class="header--link header--link__without-pl" href="./second-page.html">LIFESTYLE</a></li>
           <li ><a class="header--link" href="">PHOTODIARY</a></li>
           <li ><a class="header--link" href="">MUSIC</a></li>
           <li ><a class="header--link header--link__without-pr" href="">TRAVEL</a></li>
@@ -31,11 +31,19 @@
     </header>
 
     <main>
-      <div class="slider mg-0-auto mg-70-bot w-70">
-        <img
-          src="./images/main.png"
-          alt="Two girls in front of the mountain"
-        />
+      <div class="container mg-0-auto mg-70-bot w-70">
+        <div class="slider min-width-70">
+          <div class="slider-line min-width-70">
+            <img class="slider--img min-width-70"
+              src="./images/sliderImages/main.png"
+              alt="Two girls in front of the mountain"
+            />
+            <img class="slider--img min-width-70" src="./images/sliderImages/post-1.jpg" alt="girl by the sea">
+            <img class="slider--img min-width-70" src="./images/sliderImages/post-2.jpg" alt="big stone mountain">
+          </div>
+        </div>
+        <button class="slider--prev"><img class="slider--arrow rotate" src="./images/arrow.svg"></button>
+        <button class="slider--next"><img class="slider--arrow" src="./images/arrow.svg"></button>
       </div>
 
       <article class="article-with-aside">
@@ -115,8 +123,8 @@
             </div>
           </section>
         </article>
-        <div class="aside-wrapper">
-          <aside>
+        <aside class="aside">
+          <div class="aside-wrapper">
             <div>
               <div class="aside--next-post">
                 <div>
@@ -156,8 +164,8 @@
                 </div>
               </div>
             </div>
-          </aside>
-        </div>
+          </div>
+        </aside>
       </article>
 
       <section class="three-posts-section mg-0-auto">
@@ -217,7 +225,9 @@
                 <img class="rounded" src="./images/new-commentator.svg" alt="new commentator image">
               </div>
               <div class="w-100">
-                <input class="comments--input w-100" placeholder="&emsp;JOIN THE DISCUSSION">
+                <div class="comments--wrapper-textarea w-100">
+                  <textarea class="comments--textarea" placeholder="Join the discussion"></textarea>
+                </div>
               </div>
             </div>
           </div>
@@ -248,5 +258,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
